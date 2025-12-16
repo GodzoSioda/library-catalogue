@@ -60,5 +60,5 @@ Built with \*\*semantic HTML\*\*, \*\*external CSS\*\*, and \*\*JavaScript\*\* f
 
 &nbsp;  ```bash
 
-&nbsp;  git clone https://github.com/your-username/library-catalogue.git
+&nbsp;  git clone https://github.com/GodzoSioda/library-catalogue.git
 
