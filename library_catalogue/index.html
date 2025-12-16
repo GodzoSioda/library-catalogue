@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Catalogue</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Library Catalogue</h1>
+  </header>
+
+  <section class="search-section">
+    <label for="search">Search Books:</label>
+    <input type="text" id="search" class="search-input" placeholder="Enter title or author">
+  </section>
+
+  <section class="catalogue">
+    <h2>Book List</h2>
+
+<div class="sort-controls">
+  <button id="sort-title">Sort by Title</button>
+  <button id="sort-author">Sort by Author</button>
+  <button id="sort-year">Sort by Year</button>
+  <button id="sort-genre">Sort by Genre</button>
+
+  <label for="sort-select">Sort by:</label>
+  <select id="sort-select">
+    <option value="">--Choose--</option>
+    <option value="title">Title</option>
+    <option value="author">Author</option>
+    <option value="year">Year</option>
+    <option value="genre">Genre</option>
+  </select>
+</div>
+
+    <table class="book-table">
+      <thead>
+        <tr>
+          <th>Title</th><th>Author</th><th>Year</th><th>Genre</th><th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+        <!-- Books will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </section>
+
+  <section class="add-book">
+    <h2>Add a New Book</h2>
+    <form id="book-form" class="book-form">
+      <input type="text" id="title" placeholder="Title" required>
+      <input type="text" id="author" placeholder="Author" required>
+      <input type="number" id="year" placeholder="Year" required>
+      <input type="text" id="genre" placeholder="Genre" required>
+      <button type="submit">Add Book</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Library Catalogue Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
